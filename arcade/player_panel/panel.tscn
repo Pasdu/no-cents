@@ -1,0 +1,119 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://interface/default.tres" type="Theme" id=1]
+[ext_resource path="res://arcade/player_panel/profile_list.gd" type="Script" id=2]
+[ext_resource path="res://arcade/player_panel/panel.gd" type="Script" id=3]
+[ext_resource path="res://arcade/player_panel/create_profile.gd" type="Script" id=4]
+
+[node name="Player_Panel" type="PanelContainer"]
+anchor_left = 0.395
+anchor_top = 0.395
+anchor_right = 0.606
+anchor_bottom = 0.513
+margin_left = -0.480011
+margin_right = 0.455994
+margin_bottom = 0.199982
+theme = ExtResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="no player" type="VBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 210.0
+margin_bottom = 64.0
+
+[node name="Label" type="Label" parent="no player"]
+margin_top = 20.0
+margin_right = 203.0
+margin_bottom = 37.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "PRESS START TO JOIN"
+align = 1
+valign = 1
+
+[node name="profile_list" type="VBoxContainer" parent="."]
+visible = false
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 208.0
+margin_bottom = 119.0
+script = ExtResource( 2 )
+
+[node name="last" type="Label" parent="profile_list"]
+margin_top = 8.0
+margin_right = 201.0
+margin_bottom = 25.0
+size_flags_vertical = 6
+text = "..."
+align = 1
+valign = 1
+
+[node name="selected" type="Label" parent="profile_list"]
+margin_top = 46.0
+margin_right = 201.0
+margin_bottom = 63.0
+size_flags_vertical = 6
+text = "..."
+align = 1
+valign = 1
+uppercase = true
+
+[node name="next" type="Label" parent="profile_list"]
+margin_top = 85.0
+margin_right = 201.0
+margin_bottom = 102.0
+size_flags_vertical = 6
+text = "..."
+align = 1
+valign = 1
+
+[node name="create profile" type="VBoxContainer" parent="."]
+visible = false
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 210.0
+margin_bottom = 66.0
+script = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="create profile"]
+margin_right = 203.0
+margin_bottom = 17.0
+text = "CREATE PROFILE"
+align = 1
+
+[node name="field" type="HBoxContainer" parent="create profile"]
+margin_top = 21.0
+margin_right = 203.0
+margin_bottom = 38.0
+
+[node name="Label" type="Label" parent="create profile/field"]
+margin_right = 35.0
+margin_bottom = 17.0
+text = "Name:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="create profile/field"]
+margin_left = 39.0
+margin_right = 39.0
+margin_bottom = 17.0
+
+[node name="NextCharacter" type="Label" parent="create profile/field"]
+margin_left = 43.0
+margin_right = 203.0
+margin_bottom = 17.0
+size_flags_horizontal = 3
+text = "A"
+
+[node name="Label3" type="Label" parent="create profile"]
+margin_top = 42.0
+margin_right = 203.0
+margin_bottom = 59.0
+custom_colors/font_color = Color( 0.329412, 0.368627, 0.403922, 1 )
+text = "A:ADD B:ERASE"
+align = 2

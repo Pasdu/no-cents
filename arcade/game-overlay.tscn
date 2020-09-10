@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://arcade/player_panel/panel.tscn" type="PackedScene" id=1]
+
+[node name="Overlay" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player_Panel" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.002
+anchor_top = 0.0
+anchor_right = 0.214
+anchor_bottom = 0.116
+margin_left = 0.131352
+margin_top = -1.13013
+margin_right = 0.043335
+margin_bottom = 0.269867
+
+[node name="Player_Panel2" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.786
+anchor_top = 0.004
+anchor_right = 0.998
+anchor_bottom = 0.122
+margin_left = -0.235413
+margin_top = -0.0310731
+margin_right = -0.323486
+margin_bottom = 0.168922
+
+[node name="Player_Panel3" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.0
+anchor_top = 0.862
+anchor_right = 0.211
+anchor_bottom = 1.0
+margin_left = 2.17938
+margin_top = 6.52771
+margin_right = 3.11537
+margin_bottom = -5.27228
+
+[node name="Player_Panel4" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.785
+anchor_top = 0.875
+anchor_right = 0.997
+anchor_bottom = 0.993
+margin_left = -0.377686
+margin_top = -0.106018
+margin_right = -0.465759
+margin_bottom = 0.0939941

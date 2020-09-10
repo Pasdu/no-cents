@@ -1,0 +1,180 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://interface/default.tres" type="Theme" id=1]
+[ext_resource path="res://arcade/interface/quick map/quick map.gd" type="Script" id=2]
+
+[node name="quick map" type="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 415.0
+margin_top = 227.0
+margin_right = -371.0
+margin_bottom = -157.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="contents" type="VBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 231.0
+margin_bottom = 209.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="contents"]
+margin_right = 224.0
+margin_bottom = 17.0
+text = "Quick Map Controls"
+align = 1
+
+[node name="row1" type="HBoxContainer" parent="contents"]
+margin_top = 21.0
+margin_right = 224.0
+margin_bottom = 78.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Player" type="VBoxContainer" parent="contents/row1"]
+margin_right = 110.0
+margin_bottom = 57.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="contents/row1/Player"]
+margin_right = 110.0
+margin_bottom = 17.0
+text = "Player Number"
+align = 1
+
+[node name="SpinBox" type="SpinBox" parent="contents/row1/Player"]
+margin_top = 21.0
+margin_right = 110.0
+margin_bottom = 48.0
+min_value = 1.0
+max_value = 16.0
+value = 1.0
+
+[node name="DPads" type="VBoxContainer" parent="contents/row1"]
+margin_left = 114.0
+margin_right = 224.0
+margin_bottom = 57.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="contents/row1/DPads"]
+margin_right = 110.0
+margin_bottom = 17.0
+text = "D-Pads"
+align = 1
+
+[node name="SpinBox" type="SpinBox" parent="contents/row1/DPads"]
+margin_top = 21.0
+margin_right = 110.0
+margin_bottom = 48.0
+min_value = 1.0
+max_value = 16.0
+value = 1.0
+
+[node name="row2" type="HBoxContainer" parent="contents"]
+margin_top = 82.0
+margin_right = 224.0
+margin_bottom = 139.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Analogs" type="VBoxContainer" parent="contents/row2"]
+margin_right = 110.0
+margin_bottom = 57.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="contents/row2/Analogs"]
+margin_right = 110.0
+margin_bottom = 17.0
+text = "Analogs"
+align = 1
+
+[node name="SpinBox" type="SpinBox" parent="contents/row2/Analogs"]
+margin_top = 21.0
+margin_right = 110.0
+margin_bottom = 48.0
+min_value = 1.0
+max_value = 16.0
+value = 1.0
+
+[node name="Buttons" type="VBoxContainer" parent="contents/row2"]
+margin_left = 114.0
+margin_right = 224.0
+margin_bottom = 57.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="contents/row2/Buttons"]
+margin_right = 110.0
+margin_bottom = 17.0
+text = "Buttons"
+align = 1
+
+[node name="SpinBox" type="SpinBox" parent="contents/row2/Buttons"]
+margin_top = 21.0
+margin_right = 110.0
+margin_bottom = 48.0
+min_value = 1.0
+max_value = 16.0
+value = 1.0
+
+[node name="row3" type="HBoxContainer" parent="contents"]
+margin_top = 143.0
+margin_right = 224.0
+margin_bottom = 202.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Triggers" type="VBoxContainer" parent="contents/row3"]
+margin_right = 110.0
+margin_bottom = 59.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="Label" type="Label" parent="contents/row3/Triggers"]
+margin_right = 110.0
+margin_bottom = 17.0
+text = "Triggers"
+align = 1
+
+[node name="SpinBox" type="SpinBox" parent="contents/row3/Triggers"]
+margin_top = 21.0
+margin_right = 110.0
+margin_bottom = 48.0
+min_value = 1.0
+max_value = 16.0
+value = 1.0
+
+[node name="map" type="Button" parent="contents/row3"]
+margin_left = 114.0
+margin_top = 18.0
+margin_right = 166.0
+margin_bottom = 41.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "Map "
+
+[node name="cancel" type="Button" parent="contents/row3"]
+margin_left = 170.0
+margin_top = 18.0
+margin_right = 224.0
+margin_bottom = 41.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "Cancel"
+
+[node name="dialog" type="AcceptDialog" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 231.0
+margin_bottom = 209.0
+window_title = "Quick Mapper"
