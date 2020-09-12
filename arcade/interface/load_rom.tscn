@@ -1,0 +1,14 @@
+[gd_scene format=2]
+
+[node name="FileDialog" type="FileDialog"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 193.0
+margin_top = 114.0
+margin_right = -174.0
+margin_bottom = -27.0
+window_title = "Open a File"
+mode = 0
+access = 2
+current_dir = "D:/projects/no cents"
+current_path = "D:/projects/no cents/"

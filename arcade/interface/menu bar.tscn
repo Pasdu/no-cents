@@ -44,7 +44,7 @@ text = "Game"
 [node name="Label" type="Label" parent="items"]
 margin_left = 160.0
 margin_top = 3.0
-margin_right = 1009.0
+margin_right = 1008.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
 text = "F1 Hide/Show"
